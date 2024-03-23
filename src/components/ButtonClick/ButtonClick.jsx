@@ -1,5 +1,4 @@
 import React from "react";
-
 export default function ButtonClick({ children }) {
   function handleClick() {
     console.log("2");
