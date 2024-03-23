@@ -1,37 +1,18 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-
 import "./App.css";
-import ButtonClick from "./components/ButtonClick/ButtonClick.jsx";
-
+import Player from "./components/Player/Player.jsx";
 function App() {
-  // const [count, setCount] = useState(0);
-
   return (
-    <>
-      <div>
-        <ButtonClick> ClickToShow </ButtonClick>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <main>
+      <div id="game-container">
+        <ol id="players">
+          <li>
+            <Player name="PLayer 1" symbol="X"></Player>
+            <Player name="PLayer 2" symbol="O"></Player>
+          </li>
+        </ol>
+        GAME BOaRD
       </div>
-      <h1>Vite + React</h1>
-      {/* <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div> */}
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    </main>
   );
 }
 
