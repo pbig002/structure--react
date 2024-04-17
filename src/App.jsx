@@ -6,11 +6,11 @@ function App() {
       <div id="game-container">
         <ol id="players">
           {/* <li> */}
-          <Player name="PLayer 1" symbol="X"></Player>
-          <Player name="PLayer 2" symbol="O"></Player>
+          <Player initialName="PLayer 1" symbol="X"></Player>
+          <Player initialName="PLayer 2" symbol="O"></Player>
           {/* </li> */}
         </ol>
-        GAME BOaRD
+        GAME BOARD
       </div>
     </main>
   );
